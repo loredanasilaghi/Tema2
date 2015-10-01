@@ -13,3 +13,4 @@ C:\Coding\Tema2\Tema2\obj\Debug\Tema2.dll
 C:\Coding\Tema2\Tema2\obj\Debug\Tema2.pdb
 C:\Coding\Tema2\Tema2\bin\Debug\Tema2.dll.CodeAnalysisLog.xml
 C:\Coding\Tema2\Tema2\bin\Debug\Tema2.dll.lastcodeanalysissucceeded
+c:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2\obj\Debug\Tema2.csprojResolveAssemblyReference.cache

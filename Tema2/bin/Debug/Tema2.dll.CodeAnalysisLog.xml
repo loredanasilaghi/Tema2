@@ -2,20 +2,46 @@
 <?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
 <FxCopReport Version="14.0">
  <Targets>
-  <Target Name="C:\Coding\Tema2\Tema2\bin\Debug\Tema2.dll">
+  <Target Name="C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2\bin\Debug\Tema2.dll">
    <Modules>
     <Module Name="tema2.dll">
      <Messages>
-      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2015-10-01 06:24:18Z" FixCategory="NonBreaking">
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2015-10-01 21:05:24Z" FixCategory="NonBreaking">
        <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'Tema2.dll' with a strong name key.</Issue>
       </Message>
-      <Message Id="Tema" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-10-01 06:24:18Z" FixCategory="Breaking">
+      <Message Id="Tema" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-10-01 21:05:24Z" FixCategory="Breaking">
        <Issue Name="Assembly" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Tema' in assembly name 'Tema2.dll'.</Issue>
       </Message>
-      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2015-10-01 06:24:18Z" FixCategory="NonBreaking">
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2015-10-01 21:05:24Z" FixCategory="NonBreaking">
        <Issue Certainty="95" Level="Error">Mark 'Tema2.dll' with CLSCompliant(true) because it exposes externally visible types.</Issue>
       </Message>
      </Messages>
+     <Namespaces>
+      <Namespace Name="Training">
+       <Types>
+        <Type Name="EncryptionProblem" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#TestMethod1()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Training.EncryptionProblem.EncryptMessage(System.String,System.Int32)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2015-10-01 21:05:24Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2" File="EncryptionProblem.cs" Line="15">Method 'EncryptionProblem.TestMethod1()' passes a literal string as parameter 'message' of a call to 'EncryptionProblem.EncryptMessage(string, int)'. Retrieve the following string(s) from a resource table instead: "nicaieri nu e ca acasa".</Issue>
+            </Message>
+            <Message Id="acasa" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2015-10-01 21:05:24Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2" File="EncryptionProblem.cs" Line="15">Correct the spelling of the unrecognized token 'acasa' in the literal '"nicaieri nu e ca acasa"'.</Issue>
+            </Message>
+            <Message Id="ca" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2015-10-01 21:05:24Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2" File="EncryptionProblem.cs" Line="15">Correct the spelling of the unrecognized token 'ca' in the literal '"nicaieri nu e ca acasa"'.</Issue>
+            </Message>
+            <Message Id="nicaieri" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2015-10-01 21:05:24Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2" File="EncryptionProblem.cs" Line="15">Correct the spelling of the unrecognized token 'nicaieri' in the literal '"nicaieri nu e ca acasa"'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
     </Module>
    </Modules>
   </Target>
@@ -31,6 +57,16 @@
    <MessageLevel Certainty="95">CriticalError</MessageLevel>
    <File Name="designrules.dll" Version="14.0.0.0" />
   </Rule>
+  <Rule TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303">
+   <Name>Do not pass literals as localized parameters</Name>
+   <Description>Literal strings that are embedded in source code are difficult to localize. Avoid passing literal strings as arguments in circumstances where a localized string is generally expected.</Description>
+   <Resolution Name="KnownValue">Method {0} passes a literal string as parameter '{1}' of a call to {2}. Retrieve the following string(s) from a resource table instead: {3}.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182187.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
   <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
    <Name>Identifiers should be spelled correctly</Name>
    <Description>The individual words that make up an identifier should not be abbreviated and should be spelled correctly. If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</Description>
@@ -40,6 +76,16 @@
    <Email>[none]</Email>
    <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
    <File Name="namingrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204">
+   <Name>Literals should be spelled correctly</Name>
+   <Description>This rule parses the literal string into words, tokenizing compound words, and checks the spelling of each word/token.</Description>
+   <Resolution Name="Default">Correct the spelling of the unrecognized token '{0}' in the literal '{1}'.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/bb264488.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
   </Rule>
   <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
    <Name>Mark assemblies with CLSCompliantAttribute</Name>

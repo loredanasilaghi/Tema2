@@ -7,3 +7,9 @@ C:\Coding\Tema2\Tema2\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFram
 C:\Coding\Tema2\Tema2\obj\Debug\Tema2.dll
 C:\Coding\Tema2\Tema2\obj\Debug\Tema2.pdb
 C:\Coding\Tema2\Tema2\obj\Debug\Training2.csprojResolveAssemblyReference.cache
+C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2\bin\Debug\Tema2.dll
+C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2\bin\Debug\Tema2.pdb
+C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2\bin\Debug\Tema2.dll.CodeAnalysisLog.xml
+C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2\bin\Debug\Tema2.dll.lastcodeanalysissucceeded
+C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2\obj\Debug\Tema2.dll
+C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2\obj\Debug\Tema2.pdb
