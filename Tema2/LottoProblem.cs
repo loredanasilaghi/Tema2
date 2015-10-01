@@ -1,10 +1,10 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Tema2
+namespace Training
 {
     [TestClass]
-    public class LotoProblem
+    public class LottoProblem
     {
         [TestMethod]
         public void TestTheChancesToGet6LuckyNumbers()
@@ -33,7 +33,7 @@ namespace Tema2
             Assert.AreEqual(0.00096862, CalculateWinningProbability(totalBalls, obtainedBalls, extractedBalls));
         }
 
-        private double CalculateFactorial(int noToBeFactored)
+        private static double CalculateFactorial(int noToBeFactored)
         {
             if (noToBeFactored == 0)
             {
@@ -49,13 +49,13 @@ namespace Tema2
             return multiplication;
         }
 
-        private double CalculateCombinations(int n, int k)
+        private static double CalculateCombinations(int n, int k)
         {
             double result = CalculateFactorial(n) / (CalculateFactorial(k) * CalculateFactorial(n - k));
             return result;
         }
 
-        private double CalculateWinningProbability(int totalBalls, int obtainedBalls, int extractedBalls)
+        private static double CalculateWinningProbability(int totalBalls, int obtainedBalls, int extractedBalls)
         {
             int unextractedBalls = totalBalls - extractedBalls;
             //double a = CalculateCombinations(extractedBalls, obtainedBalls);

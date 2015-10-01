@@ -5,3 +5,11 @@ c:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2\obj\Debug\Te
 c:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2\obj\Debug\Tema2.pdb
 c:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2\bin\Debug\Tema2.dll.CodeAnalysisLog.xml
 c:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2\bin\Debug\Tema2.dll.lastcodeanalysissucceeded
+C:\Coding\Tema2\Tema2\bin\Debug\Tema2.dll
+C:\Coding\Tema2\Tema2\bin\Debug\Tema2.pdb
+C:\Coding\Tema2\Tema2\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Coding\Tema2\Tema2\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Coding\Tema2\Tema2\obj\Debug\Tema2.dll
+C:\Coding\Tema2\Tema2\obj\Debug\Tema2.pdb
+C:\Coding\Tema2\Tema2\bin\Debug\Tema2.dll.CodeAnalysisLog.xml
+C:\Coding\Tema2\Tema2\bin\Debug\Tema2.dll.lastcodeanalysissucceeded

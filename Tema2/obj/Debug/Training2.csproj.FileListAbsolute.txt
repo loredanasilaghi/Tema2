@@ -1,0 +1,9 @@
+C:\Coding\Tema2\Tema2\bin\Debug\Tema2.dll
+C:\Coding\Tema2\Tema2\bin\Debug\Tema2.pdb
+C:\Coding\Tema2\Tema2\bin\Debug\Tema2.dll.CodeAnalysisLog.xml
+C:\Coding\Tema2\Tema2\bin\Debug\Tema2.dll.lastcodeanalysissucceeded
+C:\Coding\Tema2\Tema2\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Coding\Tema2\Tema2\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Coding\Tema2\Tema2\obj\Debug\Tema2.dll
+C:\Coding\Tema2\Tema2\obj\Debug\Tema2.pdb
+C:\Coding\Tema2\Tema2\obj\Debug\Training2.csprojResolveAssemblyReference.cache
