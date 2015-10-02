@@ -6,16 +6,18 @@ using System.Collections.Generic;
 namespace Training
 {
     [TestClass]
-    public class EncryptionProblem
+    public class EncryptionProblemMatrix
     {
         [TestMethod]
         public void TestMethod1()
         {
-            string originalMsg = "nicaieri nu e ca acasa";
+            string originalMsg = "nicaierinuecaacasa";
             string encryptedMsg = EncryptMessage(originalMsg, 4);
             string decryptedMsg = DecryptMessage(encryptedMsg, 4);
             Assert.AreEqual(originalMsg, decryptedMsg);
         }
+        //remove last 3 chars
+        //str = str.Remove(str.Length - 3);
 
         private static string EncryptMessage(string message, int columns)
         {
@@ -32,70 +34,65 @@ namespace Training
             return encryptedMsg;
         }
 
-        private static string DecryptMessage(string message, int columns)
-        {
-            int rows = 0;
-            char[][] matrix = SetEncryptedMsgIntoColumns(message, columns, ref rows);
-            string decryptedMsg = string.Empty;
-            for (int i = 0; i < columns; i++)
-            {
-                for (int j = 0; j < rows; j++)
-                {
-                    decryptedMsg += matrix[j][i];
-                }
-            }
+        //private static string DecryptMessage(string message, int columns)
+        //{
+        //    int rows = 0;
+        //    char[][] matrix = SetEncryptedMsgIntoColumns(message, columns, ref rows);
+        //    string decryptedMsg = string.Empty;
+        //    for (int i = 0; i < columns; i++)
+        //    {
+        //        for (int j = 0; j < rows; j++)
+        //        {
+        //            decryptedMsg += matrix[j][i];
+        //        }
+        //    }
 
-            return decryptedMsg;
-        }
+        //    return decryptedMsg;
+        //}
 
-        private static char[][] SetOriginalMsgIntoColumns(string message, int columns, ref int rows)
+        private static string SetOriginalMsgIntoColumns(string message, int columns, ref int rows)
         {
             string shortMsg = StripPunctuationFromString(message);
             int letters = shortMsg.Count();
-            rows = (int) Math.Ceiling((double)letters / (double)columns);
+            rows = (int)Math.Ceiling((double)letters / (double)columns);
             int extraLetters = (rows * columns) - letters;
             shortMsg += RandomString(extraLetters);
-            return CreateMatrixForEncryption(shortMsg, columns, rows);
+            return shortMsg;
         }
 
-        private static char[][] SetEncryptedMsgIntoColumns(string message, int columns, ref int rows)
+        private static string EncryptMessage(string message, int columns, int rows)
         {
-            int letters = message.Count();
+            string shortMsg = StripPunctuationFromString(message);
+            int letters = shortMsg.Count();
             rows = (int)Math.Ceiling((double)letters / (double)columns);
-            return CreateMatrixForDecryption(message, columns, rows);
-        }
-
-        private static char[][] CreateMatrixForEncryption(string message, int columns, int rows)
-        {
-            char[][] matrix = new char[columns][];
-            int position = 0;
-            for (int i = 0; i < columns; i++)
-            {
-                matrix[i] = new char[rows];
-                for (int j = 0; j < rows; j++)
-                {
-                    matrix[i][j] = message[position];
-                    position++;
-                }
-            }
-            return matrix;
-        }
-
-        private static char[][] CreateMatrixForDecryption(string message, int columns, int rows)
-        {
-            char[][] matrix = new char[rows][];
-            int position = 0;
+            int extraLetters = (rows * columns) - letters;
+            shortMsg += RandomString(extraLetters);
+            string encryptedString = string.Empty;
             for (int i = 0; i < rows; i++)
             {
-                matrix[i] = new char[columns];
                 for (int j = 0; j < columns; j++)
                 {
-                    matrix[i][j] = message[position];
-                    position++;
+                   encryptedString += shortMsg[j*rows+i];
                 }
             }
-            return matrix;
+            return encryptedString;
         }
+
+        //private static char[][] CreateMatrixForDecryption(string message, int columns, int rows)
+        //{
+        //    char[][] matrix = new char[rows][];
+        //    int position = 0;
+        //    for (int i = 0; i < rows; i++)
+        //    {
+        //        matrix[i] = new char[columns];
+        //        for (int j = 0; j < columns; j++)
+        //        {
+        //            matrix[i][j] = message[position];
+        //            position++;
+        //        }
+        //    }
+        //    return matrix;
+        //}
 
         private static string RandomString(int length)
         {
