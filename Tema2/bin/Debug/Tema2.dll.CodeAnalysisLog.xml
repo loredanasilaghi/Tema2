@@ -6,13 +6,13 @@
    <Modules>
     <Module Name="tema2.dll">
      <Messages>
-      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2015-10-01 21:05:24Z" FixCategory="NonBreaking">
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2015-10-04 11:25:00Z" FixCategory="NonBreaking">
        <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'Tema2.dll' with a strong name key.</Issue>
       </Message>
-      <Message Id="Tema" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-10-01 21:05:24Z" FixCategory="Breaking">
+      <Message Id="Tema" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-10-04 11:25:00Z" FixCategory="Breaking">
        <Issue Name="Assembly" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Tema' in assembly name 'Tema2.dll'.</Issue>
       </Message>
-      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2015-10-01 21:05:24Z" FixCategory="NonBreaking">
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2015-10-04 11:25:00Z" FixCategory="NonBreaking">
        <Issue Certainty="95" Level="Error">Mark 'Tema2.dll' with CLSCompliant(true) because it exposes externally visible types.</Issue>
       </Message>
      </Messages>
@@ -21,19 +21,38 @@
        <Types>
         <Type Name="EncryptionProblem" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Members>
-          <Member Name="#TestMethod1()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+          <Member Name="#ComplexMessage()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="Training.EncryptionProblem.EncryptMessage(System.String,System.Int32)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2015-10-01 21:05:24Z" FixCategory="DependsOnFix">
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2" File="EncryptionProblem.cs" Line="15">Method 'EncryptionProblem.TestMethod1()' passes a literal string as parameter 'message' of a call to 'EncryptionProblem.EncryptMessage(string, int)'. Retrieve the following string(s) from a resource table instead: "nicaieri nu e ca acasa".</Issue>
+            <Message Id="Training.EncryptionProblem.EncryptMessage(System.String,System.Int32)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2015-10-04 11:25:00Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2" File="EncryptionProblem.cs" Line="26">Method 'EncryptionProblem.ComplexMessage()' passes a literal string as parameter 'message' of a call to 'EncryptionProblem.EncryptMessage(string, int)'. Retrieve the following string(s) from a resource table instead: "era mai frumos, daca nu stergeam spatiile, nu?".</Issue>
             </Message>
-            <Message Id="acasa" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2015-10-01 21:05:24Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2" File="EncryptionProblem.cs" Line="15">Correct the spelling of the unrecognized token 'acasa' in the literal '"nicaieri nu e ca acasa"'.</Issue>
+            <Message Id="daca" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2015-10-04 11:25:00Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2" File="EncryptionProblem.cs" Line="26">Correct the spelling of the unrecognized token 'daca' in the literal '"era mai frumos, daca nu stergeam spatiile, nu?"'.</Issue>
             </Message>
-            <Message Id="ca" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2015-10-01 21:05:24Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2" File="EncryptionProblem.cs" Line="15">Correct the spelling of the unrecognized token 'ca' in the literal '"nicaieri nu e ca acasa"'.</Issue>
+            <Message Id="frumos" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2015-10-04 11:25:00Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2" File="EncryptionProblem.cs" Line="26">Correct the spelling of the unrecognized token 'frumos' in the literal '"era mai frumos, daca nu stergeam spatiile, nu?"'.</Issue>
             </Message>
-            <Message Id="nicaieri" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2015-10-01 21:05:24Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2" File="EncryptionProblem.cs" Line="15">Correct the spelling of the unrecognized token 'nicaieri' in the literal '"nicaieri nu e ca acasa"'.</Issue>
+            <Message Id="spatiile" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2015-10-04 11:25:00Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2" File="EncryptionProblem.cs" Line="26">Correct the spelling of the unrecognized token 'spatiile' in the literal '"era mai frumos, daca nu stergeam spatiile, nu?"'.</Issue>
+            </Message>
+            <Message Id="stergeam" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2015-10-04 11:25:00Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2" File="EncryptionProblem.cs" Line="26">Correct the spelling of the unrecognized token 'stergeam' in the literal '"era mai frumos, daca nu stergeam spatiile, nu?"'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SimpleMessage()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Training.EncryptionProblem.EncryptMessage(System.String,System.Int32)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2015-10-04 11:25:00Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2" File="EncryptionProblem.cs" Line="16">Method 'EncryptionProblem.SimpleMessage()' passes a literal string as parameter 'message' of a call to 'EncryptionProblem.EncryptMessage(string, int)'. Retrieve the following string(s) from a resource table instead: "nicaieri nu e ca acasa".</Issue>
+            </Message>
+            <Message Id="acasa" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2015-10-04 11:25:00Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2" File="EncryptionProblem.cs" Line="16">Correct the spelling of the unrecognized token 'acasa' in the literal '"nicaieri nu e ca acasa"'.</Issue>
+            </Message>
+            <Message Id="ca" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2015-10-04 11:25:00Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2" File="EncryptionProblem.cs" Line="16">Correct the spelling of the unrecognized token 'ca' in the literal '"nicaieri nu e ca acasa"'.</Issue>
+            </Message>
+            <Message Id="nicaieri" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2015-10-04 11:25:00Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Loredana\Documents\Visual Studio 2015\Projects\Tema2\Tema2" File="EncryptionProblem.cs" Line="16">Correct the spelling of the unrecognized token 'nicaieri' in the literal '"nicaieri nu e ca acasa"'.</Issue>
             </Message>
            </Messages>
           </Member>
